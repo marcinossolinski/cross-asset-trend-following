@@ -1,0 +1,157 @@
+{
+  "baseline": "TSMOM[1+3+12m|sign|com60]",
+  "sample": "1974-01 to 2025-11",
+  "performance": {
+    "Trend (net of costs)": {
+      "start": "1974-01",
+      "end": "2025-11",
+      "ann_return": 0.06454398650061789,
+      "cagr": 0.06022315467938766,
+      "ann_vol": 0.10958851838075381,
+      "sharpe": 0.5889666860570792,
+      "sortino": 0.986043031220493,
+      "max_drawdown": -0.3020643561453381,
+      "calmar": 0.19937193334526143,
+      "skew": 0.4480578808715293,
+      "excess_kurtosis": 2.790765996615969,
+      "hit_rate": 0.5842696629213483,
+      "best_month": 0.19145340257629218,
+      "worst_month": -0.09344080286947598,
+      "annual_turnover": 15.231931049920181,
+      "annual_cost_drag": 0.005566374694519089
+    },
+    "Trend (before costs)": {
+      "start": "1974-01",
+      "end": "2025-11",
+      "ann_return": 0.07009302791003219,
+      "cagr": 0.06614307943818587,
+      "ann_vol": 0.10917934728550599,
+      "sharpe": 0.6419989645728292,
+      "sortino": 1.0893829585769614,
+      "max_drawdown": -0.2907452086448592,
+      "calmar": 0.227494993800495,
+      "skew": 0.4556954267678055,
+      "excess_kurtosis": 2.823415358314521,
+      "hit_rate": 0.5858747993579454,
+      "best_month": 0.1916657538933888,
+      "worst_month": -0.09251478513791178,
+      "annual_turnover": NaN,
+      "annual_cost_drag": NaN
+    },
+    "Long-only, same risk budgets": {
+      "start": "1974-01",
+      "end": "2025-11",
+      "ann_return": 0.02982660808729317,
+      "cagr": 0.02356853456416541,
+      "ann_vol": 0.11339329833849025,
+      "sharpe": 0.2630367801654184,
+      "sortino": 0.36981691837171,
+      "max_drawdown": -0.4615534049632306,
+      "calmar": 0.051063504917795995,
+      "skew": -0.637151406160383,
+      "excess_kurtosis": 2.2523324168578656,
+      "hit_rate": 0.550561797752809,
+      "best_month": 0.10285949600287725,
+      "worst_month": -0.18268955363721961,
+      "annual_turnover": 1.3652463858762707,
+      "annual_cost_drag": 0.0005362018200296391
+    },
+    "US equities (excess return)": {
+      "start": "1974-01",
+      "end": "2025-11",
+      "ann_return": 0.07683216565085511,
+      "cagr": 0.06702722377616599,
+      "ann_vol": 0.15280951206684074,
+      "sharpe": 0.5027970092414652,
+      "sortino": 0.7502503929596736,
+      "max_drawdown": -0.6009074519322732,
+      "calmar": 0.11154333926236691,
+      "skew": -0.43815158255667075,
+      "excess_kurtosis": 1.6588788340560434,
+      "hit_rate": 0.6019261637239165,
+      "best_month": 0.16023764306885746,
+      "worst_month": -0.21940258759170939,
+      "annual_turnover": NaN,
+      "annual_cost_drag": NaN
+    }
+  },
+  "inference": {
+    "n_months": 623,
+    "sharpe": 0.5889666860570792,
+    "newey_west_t": 4.465741800474755,
+    "newey_west_p": 7.979179510907328e-06,
+    "psr_vs_zero": 0.9999925900082713,
+    "n_trials": 32,
+    "expected_max_sharpe_of_trials_ann": 0.24143201018274033,
+    "deflated_sharpe_ratio": 0.9947031172116418,
+    "bootstrap_sharpe_ci95": [
+      0.3359831610340612,
+      0.8451186065206866
+    ],
+    "bootstrap_p_sharpe_le_0": 0.0,
+    "vs_us_equities": {
+      "alpha_ann": 0.06927275629481075,
+      "alpha_t": 4.179086318949467,
+      "beta": -0.06154674613340388,
+      "beta_t": -0.9784879965836365,
+      "r2": 0.007365137552666434
+    },
+    "vs_long_only": {
+      "alpha_ann": 0.06749038666485394,
+      "alpha_t": 4.372599335854819,
+      "beta": -0.09878428534726053,
+      "beta_t": -0.9810668630541092,
+      "r2": 0.010447692696074484
+    }
+  },
+  "walk_forward": {
+    "period": "1985-01 to 2025-11",
+    "oos_sharpe_walk_forward": 0.5108578478049193,
+    "baseline_sharpe_same_period": 0.4738700348368134,
+    "times_selection_changed": 7,
+    "most_selected": {
+      "TSMOM[12m|scaled|com60]": 19,
+      "TSMOM[1+3+12m|scaled|com60]": 11,
+      "TSMOM[1+3+12m|sign|com20]": 9
+    }
+  },
+  "including_bretton_woods_exit": {
+    "first_month": "1972-02",
+    "sharpe": 0.6015863821171409,
+    "excess_kurtosis": 9.487879686696948,
+    "best_month": "1973-02 (+29.0%)"
+  },
+  "smile_curvature": 1.8105946535393282,
+  "averaging_bias": {
+    "lag1_autocorr": {
+      "month_end": 0.037738795760289635,
+      "monthly_average": 0.3007475258625127
+    },
+    "trend_1m_sharpe": {
+      "month_end": 0.2153431720636846,
+      "monthly_average": 0.800115427598691
+    }
+  },
+  "asset_class_contribution": {
+    "Commodity": 0.01309643589523571,
+    "Equity": 0.01499932952995022,
+    "FX": 0.04167160194390351
+  },
+  "correlations": {
+    "trend": {
+      "trend": 1.0,
+      "us_equities": -0.08582037958822217,
+      "long_only": -0.10221395548590327
+    },
+    "us_equities": {
+      "trend": -0.08582037958822217,
+      "us_equities": 1.0,
+      "long_only": 0.6803493205026169
+    },
+    "long_only": {
+      "trend": -0.10221395548590327,
+      "us_equities": 0.6803493205026169,
+      "long_only": 1.0
+    }
+  }
+}
